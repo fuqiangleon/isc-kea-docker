@@ -19,6 +19,7 @@ services:
       - sockets:/kea/sockets
       - leases:/kea/leases
       - ./logs:/kea/logs
+      - ./hooks:/kea/hooks
 
   dhcp6:
     image: jonasal/kea-dhcp6:2
@@ -30,6 +31,7 @@ services:
       - sockets:/kea/sockets
       - leases:/kea/leases
       - ./logs:/kea/logs
+      - ./hooks:/kea/hooks
 
   ctrl-agent:
     image: jonasal/kea-ctrl-agent:2
@@ -42,6 +44,7 @@ services:
       - sockets:/kea/sockets
       - leases:/kea/leases
       - ./logs:/kea/logs
+      - ./hooks:/kea/hooks
 
 volumes:
   sockets:

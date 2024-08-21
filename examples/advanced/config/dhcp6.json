@@ -66,6 +66,12 @@
                 "severity": "INFO",
                 "debuglevel": 0
             }
+        
+        ],
+        "hooks-libraries": [
+            {
+                "library": "/kea/hooks/libdhcp_lease_cmds.so"
+            }
         ]
     }
 }

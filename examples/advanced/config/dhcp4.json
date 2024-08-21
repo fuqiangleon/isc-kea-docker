@@ -142,6 +142,11 @@
                 // lots and lots of logs if told to do so.
                 "debuglevel": 0
             }
+        ],
+        "hooks-libraries": [
+            {
+                "library": "/kea/hooks/libdhcp_lease_cmds.so"
+            }
         ]
     }
 }
